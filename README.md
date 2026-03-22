@@ -17,7 +17,7 @@ Website resmi **April Tour**, spesialis private trip ke destinasi terbaik Jawa T
 
 Buka setiap file HTML dan ganti:
 - `085730451637` → nomor WhatsApp kamu
-- `hello@apriltour.id` → email kamu
+- `apriliadk04@outlook.com` → email kamu
 - Di link WA: `62085730451637` → nomor dengan format internasional (contoh: `628123456789`)
 
 ## Deploy ke GitHub Pages
