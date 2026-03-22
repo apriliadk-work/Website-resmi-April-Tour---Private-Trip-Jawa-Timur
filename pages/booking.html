@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking — April Tour</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+<div class="loader"><div class="loader-logo">APRIL TOUR</div><div class="loader-sub">Booking Trip</div><div class="loader-bar"></div></div>
+<div class="cursor"></div><div class="cursor-ring"></div>
+<div class="mobile-nav">
+  <button class="mobile-nav-close">✕</button>
+  <a href="../index.html">Beranda</a><a href="about.html">Tentang</a><a href="destinations.html">Destinasi</a><a href="packages.html">Paket</a><a href="gallery.html">Galeri</a><a href="blog.html">Blog</a><a href="contact.html">Kontak</a>
+</div>
+<header>
+  <a href="../index.html" class="nav-logo"><span class="nav-logo-main">APRIL TOUR</span><span class="nav-logo-sub">Private Trip Jawa Timur</span></a>
+  <nav>
+    <a href="destinations.html" class="nav-link">Destinasi</a><a href="packages.html" class="nav-link">Paket</a><a href="gallery.html" class="nav-link">Galeri</a><a href="blog.html" class="nav-link">Blog</a><a href="about.html" class="nav-link">Tentang</a>
+    <a href="booking.html" class="nav-cta">Booking Sekarang</a>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <p class="page-hero-label">Mulai Perjalananmu</p>
+    <h1 class="page-hero-title">Booking <em>Trip</em></h1>
+  </div>
+</div>
+<nav class="breadcrumb"><a href="../index.html">Beranda</a><span>/</span><span>Booking</span></nav>
+
+<section style="background: var(--c-bg); padding: 80px 60px;">
+  <div class="booking-layout">
+    <div class="booking-form-section">
+      <p class="section-label reveal">Isi Form Booking</p>
+      <h2 class="section-title reveal">Detail <em>Trip</em> Kamu</h2>
+      <div style="height: 32px"></div>
+      <div class="booking-form reveal">
+        <div class="form-section-title">Informasi Pribadi</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Nama Lengkap *</label>
+            <input type="text" class="form-input" placeholder="Nama lengkap kamu">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Nomor WhatsApp *</label>
+            <input type="tel" class="form-input" placeholder="08xx-xxxx-xxxx">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" placeholder="email@kamu.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Asal Kota</label>
+          <input type="text" class="form-input" placeholder="Jakarta, Surabaya, dll">
+        </div>
+
+        <div class="form-section-title">Detail Trip</div>
+        <div class="form-group">
+          <label class="form-label">Paket yang Dipilih *</label>
+          <select class="form-select">
+            <option value="">-- Pilih paket --</option>
+            <option>Bromo Sunrise (2H1M) — Rp 850.000/orang</option>
+            <option>Bromo + Ijen (3H2M) — Rp 1.600.000/orang</option>
+            <option>Ijen Blue Fire (2H1M) — Rp 750.000/orang</option>
+            <option>Malang-Batu Explorer (2H1M) — Rp 650.000/orang</option>
+            <option>Tumpak Sewu + Semeru (3H2M) — Rp 1.800.000/orang</option>
+            <option>Jatim Lengkap (5H4M) — Rp 3.500.000/orang</option>
+            <option>Custom / Konsultasi dulu</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Tanggal Keberangkatan *</label>
+            <input type="date" class="form-input">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Jumlah Peserta *</label>
+            <select class="form-select">
+              <option>2 orang</option><option>3 orang</option><option>4 orang</option>
+              <option>5 orang</option><option>6-10 orang</option><option>10+ orang</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Titik Jemput</label>
+          <select class="form-select">
+            <option>Surabaya (Bungurasih/Bandara Juanda)</option>
+            <option>Malang (Kota/Bandara Abdul Rachman Saleh)</option>
+            <option>Probolinggo</option>
+            <option>Banyuwangi</option>
+            <option>Diskusikan dengan tim</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Catatan / Permintaan Khusus</label>
+          <textarea class="form-textarea" placeholder="Ada permintaan khusus? Alergi makanan, kebutuhan khusus, atau momen spesial yang ingin dirayakan?"></textarea>
+        </div>
+        <div style="background: var(--c-white); padding: 20px; border-left: 3px solid var(--c-gold);">
+          <p style="font-size: 0.78rem; color: var(--c-text2); line-height: 1.7;">💡 Setelah submit, tim kami akan menghubungi kamu via WhatsApp dalam 1x24 jam untuk konfirmasi detail trip dan pembayaran.</p>
+        </div>
+        <button class="form-submit" onclick="submitBooking()">Kirim Form Booking →</button>
+      </div>
+    </div>
+    <div class="booking-sidebar">
+      <div class="booking-summary">
+        <h3 class="booking-summary-title">Ringkasan Booking</h3>
+        <div class="summary-item"><span class="summary-item-label">Paket</span><span class="summary-item-value" id="sum-pkg">Belum dipilih</span></div>
+        <div class="summary-item"><span class="summary-item-label">Tanggal</span><span class="summary-item-value" id="sum-date">—</span></div>
+        <div class="summary-item"><span class="summary-item-label">Peserta</span><span class="summary-item-value" id="sum-pax">2 orang</span></div>
+        <div class="summary-item"><span class="summary-item-label">Harga/orang</span><span class="summary-item-value" id="sum-price">—</span></div>
+        <div class="summary-item total"><span class="summary-item-label">Estimasi Total</span><span class="summary-item-value" id="sum-total">—</span></div>
+        <p class="booking-note">*Harga final dikonfirmasi setelah konsultasi dengan tim kami. Bisa disesuaikan dengan kebutuhan grup.</p>
+        <a href="https://wa.me/6208XXXXXXXXXX?text=Halo%20April%20Tour!%20Saya%20mau%20tanya%20info%20trip." class="booking-whatsapp">
+          💬 Chat WhatsApp Langsung
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="footer-logo">APRIL TOUR</span><span class="footer-logo-sub">Private Trip Jawa Timur</span>
+      <p class="footer-desc">Spesialis private trip eksklusif ke destinasi terbaik Jawa Timur.</p>
+      <div class="footer-contact-item"><span class="footer-contact-icon">📱</span><div><a href="https://wa.me/6208XXXXXXXXXX">08XXXXXXXXXX</a></div></div>
+      <div class="footer-contact-item"><span class="footer-contact-icon">✉️</span><div><a href="mailto:hello@apriltour.id">hello@apriltour.id</a></div></div>
+    </div>
+    <div><p class="footer-col-title">Halaman</p><ul class="footer-links"><li><a href="about.html">→ Tentang</a></li><li><a href="destinations.html">→ Destinasi</a></li><li><a href="packages.html">→ Paket</a></li><li><a href="gallery.html">→ Galeri</a></li><li><a href="blog.html">→ Blog</a></li><li><a href="contact.html">→ Kontak</a></li></ul></div>
+    <div><p class="footer-col-title">Info Booking</p><ul class="footer-links"><li><a href="#">→ Cara Booking</a></li><li><a href="#">→ Syarat & Ketentuan</a></li><li><a href="#">→ Kebijakan Refund</a></li><li><a href="packages.html">→ Semua Paket</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 April Tour. All rights reserved.</span>
+    <div class="footer-bottom-links"><a href="contact.html">Kontak</a><a href="booking.html">Booking</a></div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+<script>
+const prices = { '0': 0, '1': 850000, '2': 1600000, '3': 750000, '4': 650000, '5': 1800000, '6': 3500000 };
+const pkgNames = ['', 'Bromo Sunrise', 'Bromo + Ijen', 'Ijen Blue Fire', 'Malang-Batu', 'Tumpak Sewu+Semeru', 'Jatim Lengkap', 'Custom'];
+const paxMap = { '2 orang': 2, '3 orang': 3, '4 orang': 4, '5 orang': 5, '6-10 orang': 7, '10+ orang': 12 };
+function fmt(n) { return 'Rp ' + n.toLocaleString('id'); }
+document.querySelectorAll('.form-select, .form-input[type=date]').forEach(el => {
+  el.addEventListener('change', updateSummary);
+});
+function updateSummary() {
+  const sel = document.querySelector('select');
+  const idx = sel.selectedIndex;
+  const paxSel = document.querySelectorAll('select')[2];
+  const dateSel = document.querySelector('input[type=date]');
+  const price = prices[idx] || 0;
+  const pax = paxMap[paxSel.value] || 2;
+  document.getElementById('sum-pkg').textContent = pkgNames[idx] || 'Belum dipilih';
+  document.getElementById('sum-date').textContent = dateSel.value || '—';
+  document.getElementById('sum-pax').textContent = paxSel.value;
+  document.getElementById('sum-price').textContent = price ? fmt(price) : '—';
+  document.getElementById('sum-total').textContent = price ? fmt(price * pax) : '—';
+}
+function submitBooking() {
+  alert('Terima kasih! Tim April Tour akan menghubungi kamu via WhatsApp dalam 1x24 jam. 🙏');
+}
+</script>
+</body>
+</html>
